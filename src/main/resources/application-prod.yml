@@ -3,8 +3,8 @@ dwsurvey:
   web:
     file-path: diaowen/file/
     static-type: static
-    site-url: http://localhost:8080
-    resource-url: http://localhost:8080
+    site-url: http://www.myserver.com:8080
+    resource-url: http://www.myserver.com:8080
     #    site-url: http://ent82.surveyform.cn
     info:
       site-name: 调问网
@@ -36,9 +36,10 @@ spring:
 
   datasource:
     #type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/dwsurvey_21test?useUnicode=true&characterEncoding=utf8
-    username: root
-    password: 123456,.
+    #url: jdbc:mysql://localhost:3306/dwsurvey_21test?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://mysql-cn-north-1-58589700fa124a2d.rds.jdcloud.com:3306/dwsurvey?useUnicode=true&characterEncoding=utf8
+    username: DWsurvey
+    password: DWsurvey123456
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       initial-size: 5

@@ -7,9 +7,9 @@ dwsurvey:
     # 使用哪种部署模式，后期可能会去掉，可以先保持默认
     static-type: static
     # 站点访问地址，如果配置有域名则为域名地址
-    site-url: http://localhost:8081
+    site-url: http://www.myserver.com:8080
     # 资源访问地址，便于存储模式的切换，目前可以保持与site-url一样
-    resource-url: http://localhost:8080
+    resource-url: http://www.myserver.com:8080
     # 站点信息配置，会出现在底部footer区
     info:
       # 站点名称
@@ -54,11 +54,11 @@ spring:
   datasource:
     #type: com.alibaba.druid.pool.DruidDataSource
     # 连接URL
-    url: jdbc:mysql://localhost:3306/dwsurvey?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://mysql-cn-north-1-58589700fa124a2d.rds.jdcloud.com:3306/dwsurvey?useUnicode=true&characterEncoding=utf8
     # 连接账号
-    username: root
+    username: DWsurvey
     # 连接密码
-    password: 123456,.
+    password: DWsurvey123456
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       initial-size: 5
